@@ -1,0 +1,465 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Myspace</title>
+        <style>
+
+            html, body {
+                height: 100%
+            }
+
+            html {
+                display: table;
+                margin: auto;
+            }
+
+            body {
+                display: table-cell;
+                vertical-align: middle;
+                background: #E2E2E2;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            section {
+                display: block;
+                background: white;
+                float: left;
+                clear: both;
+                padding: 20px;
+            }
+
+            .TopBar {
+                display: block;
+                float: left;
+                background: #152AA2;
+                height: 150px;
+                width: 967px;
+            }
+
+            .BrowseOptionsBar {
+                display: block;
+                float: left;
+                clear: both;
+                height: 30px;
+                width: 967px;
+                background: #83ADD2;
+            }
+
+            .OptionsButtons {
+                color: white;
+                margin: 5px;
+            }
+
+            article {
+                display: block;
+                width: 420px;
+                float: left;
+                border: 2px solid white;
+            }
+
+            .article2 {
+                display: block;
+                width: 500px;
+                float: left;
+                border: 2px solid white;
+            }
+
+            img {
+                padding: 20px;
+                display: block;
+                width: 200px;
+                height: 250px;
+                float: left;
+            }
+
+            .Mood {
+                display: block;
+                height: 70px;
+                width: 400px;
+                float: left;
+                clear: left;
+            }
+
+            h2 {
+                display: block;
+                width: 400px;
+                margin: 0;
+                padding: 0;
+                background: #83ADD2;
+                color: white;
+                font-size: 15px;
+                float: left;
+            }
+
+            h3 {
+                display: block;
+                margin: 0;
+                padding: 0;
+                background: #FFBE5D;
+                color: red;
+                font-size: 15px;
+            }
+
+            .ContactInfo {
+                display: block;
+                border: 2px solid #83ADD2;
+                float: left;
+                clear: left;
+                width: 400px;
+                margin: 0;
+                padding: 0;
+                content: ""
+                color: rgb(0, 47, 255);
+            }
+
+            .ContactOptionsBox {
+                display: block;
+                margin: 10px;
+            }
+
+            .Interests {
+                display: block;
+                float: left;
+                width: 400px;
+                margin: 0;
+                padding: 0;
+                content: "";
+                border: 2px solid #83ADD2;
+                clear: left;
+                background: #DEF7FE;
+            } 
+
+            .InterestsLeftBox {
+                display: block;
+                height: 50px;
+                width: 100px;
+                margin: 2.5px;
+                float: left;
+                clear: both;
+                background: #B5DCFF;
+            }
+
+            .InterestsRightBox {
+                display: block;
+                height: 50px;
+                width: 270px;
+                margin: 2.5px;
+                float: left;
+                background: #DEF7FE;
+            }
+
+            .WordBox {
+                display: block;
+                padding: 5px;
+                color: black;
+            }
+
+            .MyspaceUrl {
+                display: block;
+                content: "":
+                float: left;
+                border: 2px solid gray;
+                padding: 5px;
+                clear: left;
+                width: 390px;
+            }
+
+            .BlankSpace400 {
+                display: block;
+                content: "";
+                height: 20px;
+                width: 400px;
+                float: left;
+                clear: left;
+            }
+
+            .BlankSpace500 {
+                display: block;
+                content: "";
+                height: 20px;
+                width: 400px;
+                float: left;
+                clear: left;
+            }
+
+            .ExtendedNetwork {
+                display: block;
+                float: left;
+                padding: 50px;
+                border: 2px solid gray;
+                /* clear: left; */
+                width: 400px;
+            }
+
+            .clearfix:after {
+                content: "";
+                background: green;
+
+                display: block;
+                clear: left;
+            }
+
+            .BlogEntries {
+                display: block;
+                float: left;
+                width: 500px;
+            }
+
+            .Blurbs {
+                display: block;
+                float: left;
+                width: 500px;
+            }
+
+            .FriendSpace {
+                display: block;
+                float: left;
+                width: 500px;
+            }
+
+            .TomImage img {
+                display: block;
+                float: left;
+                height: 100px;
+                width: 100px;
+            }
+
+            .LogoImage img {
+                display: block;
+                float: left;
+                height: 100px;
+                width: 220px;
+            }
+
+            .Friend {
+                display: block;
+                float: left;
+            }
+
+            .Comments {
+                display: block;
+                float: left;
+                width: 500px;
+            }
+
+            .CommentBox {
+                display: block;
+                float: left;
+                width: 500px;
+                background: #FFDEAE;
+            }
+
+            .FriendsComments {
+                display: block;
+                float: left;
+            }
+
+            .FriendInComments {
+                display: block;
+                float: left;
+                background: #FFBE5D;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class= "TopBar">
+            <div class="LogoImage">
+                <img src="logo.png" alt="Logo" />
+            </div>
+        </div>
+
+        <div class="BrowseOptionsBar">
+            <div class= "OptionsButtons">
+                <center>
+                Home <font color="black">|</font> Browse <font color="black">|</font> Search <font color="black">|</font> Invite <font color="black">|</font> Film 
+                <font color="black">|</font> Mail <font color="black">|</font> Blog <font color="black">|</font> Favorites <font color="black">|</font> Forum 
+                <font color="black">|</font> Groups <font color="black">|</font> Events <font color="black">|</font> Videos <font color="black">|</font> Music 
+                <font color="black">|</font> Classifieds
+                </center>
+            </div>
+        </div>
+        
+        <section>
+
+            <article class="clearfix">
+                <h1>Aaron</h1>
+
+                <img src="aaron2.jpg" alt="Aaron">
+
+                <p>"Miss the 2010s"</p>
+
+                <p> Male<br>
+                    29 years old<br>
+                    New York,<br>
+                    NEW YORK<br>
+                    United States<br>
+                    <br><br><br> 
+                    <font color= "Green">Online Now!</font>
+                    <br><br>
+                    Last Login:<br>
+                    6/13/2022
+                </p>
+
+                <div class="Mood">
+                    <p><b>Mood:</b> busy 🙃<br>
+                        View My: <font color="#002fff">Pics | Videos</font>
+                    </p>
+                </div>
+                
+                <div class="ContactInfo">
+                    <h2>&nbsp;Contacting Aaron</h2>
+                    <div class="ContactOptionsBox">
+                        📧 Send Message
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;⬆️
+                        Forward to Friend<br>
+                        ➕ Add to Friends
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✔️
+                        Add to Favorites<br>
+                        📩 Instant Message
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;⛔ Block
+                        User<br>
+                        👫 Add to Group
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🌟
+                        Rank User<br>
+                    </div>
+                </div>
+                
+                <div class="BlankSpace400"></div>
+                
+                <div class="MyspaceUrl">
+                    <b>MySpace URL:</b><br>
+                    <font color="002fff">www.myspace.com/aaroncho</font>
+                </div>
+                
+                <div class="BlankSpace400"></div>
+                
+                <div class="Interests">
+                    <h2>&nbsp;Aaron's Interests</h2>
+                    <div class="InterestsLeftBox">
+                        <div class= "WordBox">
+                            <b><font color="002fff">General</font></b>
+                        </div>
+                    </div>
+
+                    <div class="InterestsRightBox">
+                        <div class="WordBox">
+                            Coding, Basketball, Hiking, Food, Drinks, Sports, Music, EDM
+                        </div>
+                    </div>
+
+                    <div class="InterestsLeftBox">
+                        <div class="WordBox">
+                            <b>
+                                <font color="002fff">Music</font>
+                            </b>
+                        </div>
+                    </div>
+                    
+                    <div class="InterestsRightBox">
+                        <div class="WordBox">
+                            EDM, pop, hip-pop
+                        </div>
+                    </div>
+
+                    <div class="InterestsLeftBox">
+                        <div class="WordBox">
+                            <b>
+                                <font color="002fff">Movies</font>
+                            </b>
+                        </div>
+                    </div>
+                    
+                    <div class="InterestsRightBox">
+                        <div class="WordBox">
+                            Too many to name..
+                        </div>
+                    </div>
+
+                    <div class="InterestsLeftBox">
+                        <div class="WordBox">
+                            <b>
+                                <font color="002fff">Television</font>
+                            </b>
+                        </div>
+                    </div>
+                    
+                    <div class="InterestsRightBox">
+                        <div class="WordBox">
+                            Sitcoms and Dystopia
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <div class= "article2">
+
+                <div class="ExtendedNetwork">
+                    <center><b>Aaron is in your extended network.</b></center>
+                </div> 
+                
+                <div class="BlankSpace500"></div>
+
+                <div class="BlogEntries">
+                    <b>Aaron's Latest Blog Entries [<font color = "#002fff">View Blog</font>]</b>
+                    <br>
+                    <br>
+                    <i>There are no Blog Entries yet.</i>
+                    <br>
+                    <br>
+                </div>  
+
+                <div class="Blurbs">
+                    <h3>Aaron's Blurbs</h3>
+                    <p><font color = "red">About me:</font>
+                    <br>I'm Aaron, I miss the good old days of choosing your top 8 and choosing your own background with HTML codes :)
+                    <br>
+                    <br>
+                    <font color= "red">Who I'd like to meet:</font>
+                    <br>
+                    You! :D
+                    <br>
+                    <br>
+                    </p>
+                </div>  
+
+                <div class= "FriendSpace">
+                    <h3>Aaron's Friend Space</h3>
+                    <br>
+                    <p>Aaron has <font color = "red">1</font> friends.</p>
+                    <br>
+                    <div class="Friend">
+                        <center><b><font color="gray">Tom</font></b></center>
+                        <div class="TomImage">
+                            <img src="tom.jpeg" alt="Tom" />
+                        </div>
+                    </div>
+                </div>  
+
+                <div class= "Comments">
+                    <h3>Aaron's Friends Comments</h3>
+                    <br>
+                    Displaying 1 of 1 comments {<font color = "#002fff">View all</font> | <font color="#002fff">Add Comment</font>}
+                    <div class="BlankSpace500"></div>
+                    <div class="CommentBox">
+                        <div class="FriendInComments">
+                            <center><b><font color="002fff">Tom</font></b></center>
+                            <div class="TomImage">
+                                <img src="tom.jpeg" alt="Tom" />
+                            </div>
+                        </div>
+
+                        <div class="FriendsComments">
+                            <b>1 hour ago</b>
+                            <br>
+                            <br>
+                            Welcome back! 
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+    </body>
+</html>
